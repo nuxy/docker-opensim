@@ -12,4 +12,4 @@ COPY Regions.ini /opensim/Regions/Regions.ini
 
 EXPOSE 9000
 
-CMD ["mono", "./OpenSim.exe"]
+CMD ["mono", "./OpenSim.exe", "-background", "true"]
