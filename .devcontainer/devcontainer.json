@@ -1,5 +1,7 @@
 {
   "name": "opensim",
   "context": "..",
-  "dockerFile": "../Dockerfile"
+  "dockerFile": "../Dockerfile",
+  "forwardPorts": [9000],
+  "overrideCommand": false
 }
