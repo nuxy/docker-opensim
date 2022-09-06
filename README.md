@@ -1,4 +1,4 @@
-# docker-opensim
+# docker-opensim-server
 
 [Open Simulator](http://opensimulator.org/wiki/Main_Page) server (pre-configured).
 
