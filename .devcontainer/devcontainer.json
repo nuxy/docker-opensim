@@ -2,6 +2,11 @@
   "name": "opensim",
   "context": "..",
   "dockerFile": "../Dockerfile",
+  "build": {
+    "args": {
+      "VERSION": "0.9.2.1"
+    }
+  },
   "forwardPorts": [9000],
   "overrideCommand": false
 }
