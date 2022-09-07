@@ -1,6 +1,6 @@
 # docker-opensim-server
 
-[Open Simulator](http://opensimulator.org/wiki/Main_Page) server (pre-configured).
+Run an [Open Simulator](http://opensimulator.org/wiki/Main_Page) server in Docker.
 
 ## Dependencies
 
