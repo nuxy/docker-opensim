@@ -14,7 +14,7 @@
 ## Manually starting the container
 
     $ docker build -t opensim .
-    $ docker run --name=opensim -p 9000:9000 -p 9000:9000/udp -d opensim
+    $ docker run --name=opensim -p 9000:9000 -p 9000:9000/udp -d opensim --build-arg VERSION=0.9.2.1
 
 ## Launching in Remote-Containers
 
