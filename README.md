@@ -4,8 +4,8 @@
 
 ## Dependencies
 
-- [Visual Studio Code](https://code.visualstudio.com/download) (optional)
 - [Docker](https://docs.docker.com/get-docker)
+- [Visual Studio Code](https://code.visualstudio.com/download) (optional)
 
 ### VS Code extensions
 
@@ -19,3 +19,21 @@
 ## Launching in Remote-Containers
 
 In the VS Code _Command Palette_ choose "Open Folder in Container" which will launch the server in a Docker container allowing for realtime development and testing.  Once launched, the server can be accessed using an [OpenSim viewer](http://opensimulator.org/wiki/Compatible_Viewers#Viewers) at - [http://localhost:9000](http://localhost:9000)
+
+## Contributions
+
+If you fix a bug, or have a code you want to contribute, please send a pull-request with your changes.
+
+## Versioning
+
+This package is maintained under the [Semantic Versioning](https://semver.org) guidelines.
+
+## License and Warranty
+
+This package is distributed in the hope that it will be useful, but without any warranty; without even the implied warranty of merchantability or fitness for a particular purpose.
+
+_docker-opensim-server_ is provided under the terms of the [MIT license](http://www.opensource.org/licenses/mit-license.php)
+
+## Author
+
+[Marc S. Brooks](https://github.com/nuxy)
