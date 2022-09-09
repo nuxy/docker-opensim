@@ -14,11 +14,17 @@ Run an [Open Simulator](http://opensimulator.org/wiki/Main_Page) server in Docke
 ## Manually starting the container
 
     $ docker build -t opensim .
-    $ docker run --name=opensim -p 9000:9000 -p 9000:9000/udp -d opensim --build-arg VERSION=0.9.2.1
+    $ docker run --name=opensim -p 9000:9000 -p 9000:9000/udp -d opensim --build-arg VERSION=<version> --build-arg RUNCMD=<command>
 
 ## Launching in Remote-Containers
 
 In the VS Code _Command Palette_ choose "Open Folder in Container" which will launch the server in a Docker container allowing for realtime development and testing.  Once launched, the server can be accessed using an [OpenSim viewer](http://opensimulator.org/wiki/Compatible_Viewers#Viewers) at - [http://localhost:9000](http://localhost:9000)
+
+## Managing the game server
+
+The following command can be executed within the Docker container:
+
+    $ service game-server {start|stop|restart}
 
 ## Contributions
 
