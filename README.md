@@ -26,6 +26,10 @@ The following command can be executed within the Docker container:
 
     $ service game-server {start|stop|restart}
 
+## References
+
+- [Runtime options with Memory, CPUs, and GPUs](https://docs.docker.com/config/containers/resource_constraints)
+
 ## Contributions
 
 If you fix a bug, or have a code you want to contribute, please send a pull-request with your changes.
