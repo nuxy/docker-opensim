@@ -7,8 +7,8 @@ WORKDIR /opensim
 
 RUN curl http://opensimulator.org/dist/opensim-${version}.tar.gz -s | tar xfz - --strip 2 -C /opensim opensim-${version}/bin
 
-COPY OpenSim.ini /opensim/OpenSim.ini
-COPY Regions.ini /opensim/Regions/Regions.ini
+COPY config/OpenSim.ini /opensim/OpenSim.ini
+COPY config/Regions.ini /opensim/Regions/Regions.ini
 
 EXPOSE 9000
 
