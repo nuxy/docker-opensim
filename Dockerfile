@@ -21,4 +21,4 @@ RUN update-rc.d game-server defaults && echo "${wine_prog}" > .runcmdrc
 
 EXPOSE 9000
 
-CMD ["service", "game-server", "start"]
+CMD service game-server start & sleep infinity
