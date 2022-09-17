@@ -18,12 +18,12 @@
 
 DAEMON=/usr/bin/mono
 SCRIPT=`basename $0`
-BASEDIR=/usr/games/opensim
+BASEDIR=/usr/games
 USER=games
 
-test -x $DAEMON || exit 0
+. $BASEDIR/.game-server
 
-RUNCMD=`cat $BASEDIR/.runcmdrc`
+test -x $DAEMON || exit 0
 
 start() {
   log_daemon_msg "Starting game instance" "$DAEMON"
