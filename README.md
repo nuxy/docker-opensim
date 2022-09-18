@@ -1,6 +1,6 @@
-# docker-opensim-server
+# docker-opensimulator
 
-Run an [Open Simulator](http://opensimulator.org/wiki/Main_Page) server in Docker.
+Run a [Open Simulator](http://opensimulator.org/wiki/Main_Page) server in Docker.
 
 ## Dependencies
 
@@ -42,7 +42,7 @@ This package is maintained under the [Semantic Versioning](https://semver.org) g
 
 This package is distributed in the hope that it will be useful, but without any warranty; without even the implied warranty of merchantability or fitness for a particular purpose.
 
-_docker-opensim-server_ is provided under the terms of the [MIT license](http://www.opensource.org/licenses/mit-license.php)
+_docker-opensimulator_ is provided under the terms of the [MIT license](http://www.opensource.org/licenses/mit-license.php)
 
 ## Author
 
