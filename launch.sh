@@ -25,7 +25,7 @@ EOF
 sed -i "s/@@PASSWORD@@/$OPENSIM_PASSWORD/g" /usr/games/config-include/StandaloneCommon.ini
 
 # Start the OpenSim server.
-service game-server start
+service grid-server start
 
 # Keep-alive
 sleep infinity

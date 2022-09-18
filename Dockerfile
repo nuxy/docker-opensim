@@ -15,11 +15,11 @@ COPY config/StandaloneCommon.ini /usr/games/config-include/StandaloneCommon.ini
 # Limit permissions to games group.
 RUN chown -R games:games /usr/games
 
-COPY init.d/game-server /etc/init.d/game-server
+COPY init.d/grid-server /etc/init.d/grid-server
 COPY launch.sh /usr/games/launch.sh
 
 # Install LSB init and RC scripts.
-RUN update-rc.d game-server defaults && echo "RUNCMD='$RUNCMD'" > .game-server
+RUN update-rc.d grid-server defaults && echo "RUNCMD='$RUNCMD'" > .grid-server
 
 EXPOSE 9000
 

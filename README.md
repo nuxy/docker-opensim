@@ -20,11 +20,11 @@ Run a [Open Simulator](http://opensimulator.org/wiki/Main_Page) server in Docker
 
 In the VS Code _Command Palette_ choose "Open Folder in Container" which will launch the server in a Docker container allowing for realtime development and testing.  Once launched, the server can be accessed using an [OpenSim viewer](http://opensimulator.org/wiki/Compatible_Viewers#Viewers) at - [http://localhost:9000](http://localhost:9000)
 
-## Managing the game server
+## Managing the grid server
 
 The following command can be executed within the Docker container:
 
-    $ service game-server {start|stop|restart}
+    $ service grid-server {start|stop|restart}
 
 ## References
 
