@@ -9,5 +9,5 @@
     }
   },
   "forwardPorts": [9000],
-  "postStartCommand": "service game-server start"
+  "postStartCommand": "/usr/games/launch.sh"
 }
