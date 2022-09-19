@@ -19,9 +19,8 @@
 DAEMON=/usr/bin/mono
 SCRIPT=`basename $0`
 BASEDIR=/usr/games
+RUNCMD="OpenSim.exe -background true"
 USER=games
-
-. $BASEDIR/.grid-server
 
 test -x $DAEMON || exit 0
 

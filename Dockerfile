@@ -1,7 +1,6 @@
 FROM mono
 
 ARG VERSION=0.9.2.1
-ARG RUNCMD=
 
 WORKDIR /usr/games
 
@@ -19,7 +18,7 @@ COPY init.d/grid-server /etc/init.d/grid-server
 COPY launch.sh /usr/games/launch.sh
 
 # Install LSB init and RC scripts.
-RUN update-rc.d grid-server defaults && echo "RUNCMD='$RUNCMD'" > .grid-server
+RUN update-rc.d grid-server defaults
 
 EXPOSE 9000
 
