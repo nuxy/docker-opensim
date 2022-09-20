@@ -22,7 +22,16 @@ CREATE DATABASE opensim
 EOF
 
 # Update application config.
-sed -i "s/@@PASSWORD@@/$OPENSIM_PASSWORD/g" /usr/games/config-include/StandaloneCommon.ini
+CONFIG_BLOCK=$(cat << EOF
+[DatabaseService]
+    StorageProvider = "OpenSim.Data.MySQL.dll"
+    ConnectionString = "Data Source=localhost;Database=opensim;User ID=opensim;Password=$OPENSIM_PASSWORD;Old Guids=true;SslMode=None;"
+
+[Hypergrid]
+EOF
+)
+
+perl -0 -i -pe "s/\[DatabaseService\].*^\[Hypergrid\]/$CONFIG_BLOCK/ms" /usr/games/config-include/StandaloneCommon.ini
 
 # Start the OpenSim server.
 service grid-server start
