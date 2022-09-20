@@ -16,10 +16,18 @@ UPDATE user SET Password = PASSWORD('$DEFAULT_PASSWORD') WHERE User = 'root';
 CREATE USER 'opensim'@'localhost' IDENTIFIED BY '$OPENSIM_PASSWORD';
 GRANT ALL PRIVILEGES ON opensim.* TO 'opensim'@'localhost' WITH GRANT OPTION;
 
-FLUSH PRIVILEGES;
-
 CREATE DATABASE opensim
 EOF
+
+# Check for existing database.
+if [ -s /tmp/opensim.sql ]; then
+
+    # Import and remove.
+    mysql opensim < /tmp/opensim.sql
+    rm /tmp/opensim.sql
+fi
+
+mysqladmin reload
 
 # Update application config.
 CONFIG_BLOCK=$(cat << EOF

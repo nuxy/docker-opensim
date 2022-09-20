@@ -9,6 +9,7 @@ RUN curl "http://opensimulator.org/dist/opensim-${VERSION}.tar.gz" -s | tar xfz 
 
 COPY config/OpenSim.ini /usr/games/OpenSim.ini
 COPY config/Regions.ini /usr/games/Regions/Regions.ini
+COPY db/opensim.sql /tmp/opensim.sql
 
 # Limit permissions to games group.
 RUN chown -R games:games /usr/games
