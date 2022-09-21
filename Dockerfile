@@ -22,4 +22,4 @@ RUN update-rc.d grid-server defaults
 
 EXPOSE 9000
 
-CMD /usr/games/launch.sh
+CMD /usr/games/launch.sh && sleep infinity

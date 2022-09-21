@@ -43,6 +43,3 @@ perl -0 -i -pe "s/\[DatabaseService\].*^\[Hypergrid\]/$CONFIG_BLOCK/ms" /usr/gam
 
 # Start the OpenSim server.
 service grid-server start
-
-# Keep-alive
-sleep infinity
