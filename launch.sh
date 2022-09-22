@@ -29,6 +29,8 @@ fi
 
 mysqladmin reload
 
+update-rc.d mysql defaults
+
 # Update application config.
 CONFIG_BLOCK=$(cat << EOF
 [DatabaseService]
