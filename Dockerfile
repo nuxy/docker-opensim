@@ -20,6 +20,6 @@ COPY launch.sh /usr/games/launch.sh
 # Install LSB init and RC scripts.
 RUN update-rc.d grid-server defaults
 
-EXPOSE 9000
+EXPOSE 9000-9010
 
 CMD /usr/games/launch.sh && sleep infinity

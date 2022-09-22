@@ -14,7 +14,7 @@ Run a [Open Simulator](http://opensimulator.org/wiki/Main_Page) server in Docker
 ## Manually starting the container
 
     $ docker build -t opensim . --build-arg VERSION=<version>
-    $ docker run -it -p 9000:9000/tcp -p 9000:9000/udp opensim
+    $ docker run -it -p 9000:9000/tcp -p 9000:9010/udp opensim
 
 ## Launching in Remote-Containers
 
