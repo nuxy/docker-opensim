@@ -42,6 +42,7 @@ EOF
 )
 
 perl -0 -i -pe "s/\[DatabaseService\].*^\[Hypergrid\]/$CONFIG_BLOCK/ms" /usr/games/config-include/StandaloneCommon.ini
+perl -0 -i -pe "s/ExternalHostName\s=.*/ExternalHostName = $EXTERNAL_IP/" /usr/games/Regions/Regions.ini
 
 # Start the OpenSim server.
 service grid-server start
